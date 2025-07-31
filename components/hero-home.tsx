@@ -1,5 +1,4 @@
 import VideoThumb from "@/public/images/hero-image-01.jpg";
-import ModalVideo from "@/components/modal-video";
 
 export default function HeroHome() {
   return (
@@ -30,9 +29,10 @@ export default function HeroHome() {
                     className="btn group mb-4 w-full bg-linear-to-t from-indigo-600 to-indigo-500 bg-[length:100%_100%] bg-[bottom] text-white shadow-[inset_0px_1px_0px_0px_--theme(--color-white/.16)] hover:bg-[length:100%_150%] sm:mb-0 sm:w-auto"
                     href="#0"
                   >
-                    <span className="relative inline-flex items-center">
+                    <span className="relative inline-flex items-center gap-1">
                       Start Building
-                      <span className="ml-1 tracking-normal text-white/50 transition-transform group-hover:translate-x-0.5">
+                      {/* eslint-disable-next-line */}
+                      <span className="tracking-normal text-white/50 transition-transform group-hover:translate-x-0.5">
                         -&gt;
                       </span>
                     </span>
@@ -50,15 +50,7 @@ export default function HeroHome() {
             </div>
           </div>
 
-          <ModalVideo
-            thumb={VideoThumb}
-            thumbWidth={1104}
-            thumbHeight={576}
-            thumbAlt="Modal video thumbnail"
-            video="videos//video.mp4"
-            videoWidth={1920}
-            videoHeight={1080}
-          />
+          {/* Video modal removed */}
         </div>
       </div>
     </section>

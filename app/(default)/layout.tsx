@@ -9,9 +9,9 @@ import Footer from "@/components/ui/footer";
 
 export default function DefaultLayout({
   children,
-}: {
+}: Readonly<{
   children: React.ReactNode;
-}) {
+}>) {
   useEffect(() => {
     AOS.init({
       once: true,
