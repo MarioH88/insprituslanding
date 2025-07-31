@@ -1,30 +1,17 @@
-# Free React / Next.js landing page template
 
-![Open React / Next.js template preview](https://github.com/user-attachments/assets/522a5e46-2a0e-48ca-80eb-87c7fa58f3ea)
+# Inspritus Landing Page
 
-**Open** is a **free React / Next.js landing page template built with Tailwind CSS** for developers/makers who want to create a quick and professional landing page for their open source projects, SaaS products, online services, and more.
+This is a custom React / Next.js landing page for Inspritus, built with Tailwind CSS and fully rebranded. All original template and author references have been removed.
 
-**UPDATE 2025-02-04** Added Tailwind v4 support!
+## Getting Started
 
-Use it for whatever you want, and be sure to reach us out on [Twitter](https://twitter.com/Cruip_com) if you build anything cool/useful with it.
+To run locally:
+```
+pnpm install
+pnpm dev
+```
 
-Created and maintained with ❤️ by [Cruip.com](https://cruip.com).
-
-_Version 1.0.0 built with the Cruip CSS is available [here](https://github.com/cruip/open-react-template/releases/tag/1.0.0)._
-_Version 2.0.3 built with Tailwind CSS and React + Vite is available [here](https://github.com/cruip/open-react-template/releases/tag/2.0.3)._
-_Version 3.3.0 (before redesign) built with Tailwind CSS and Next.js is available [here](https://github.com/cruip/open-react-template/releases/tag/3.3.0)._
-
-## Live demo
-
-Check the live demo here 👉️ [https://open.cruip.com/](https://open.cruip.com/)
-
-## Open PRO
-
-[![Open Pro](https://github.com/user-attachments/assets/2062c728-95f1-4d59-aa2d-d63556f625d5)](https://cruip.com/)
-
-## Design files
-
-If you need the design files, you can download them from Figma's Community 👉 https://bit.ly/401KSUS
+Open [http://localhost:3000](http://localhost:3000) in your browser.
 
 ## Usage
 
