@@ -187,10 +187,10 @@ ${formData.message}`,
       console.log('Sending email with params:', templateParams);
 
       await emailjs.send(
-        serviceId as string,
-        templateId as string,
+        serviceId,
+        templateId,
         templateParams,
-        publicKey as string
+        publicKey
       );
 
       console.log('Email sent successfully!');
