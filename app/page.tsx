@@ -1,6 +1,7 @@
 "use client";
 import React, { useEffect, useState } from "react";
 import AOS from "aos";
+import ContactForm from "../components/ContactForm";
 
 export default function Page() {
   // Carousel testimonials data
@@ -282,21 +283,7 @@ export default function Page() {
         <h2 className="text-4xl md:text-6xl font-extrabold mb-8 text-cyan-300 drop-shadow-2xl text-center" style={{fontFamily: 'Montserrat, Inter, Arial, sans-serif'}}>Contact Us</h2>
         <p className="text-xl md:text-2xl mb-8 font-medium leading-relaxed text-gray-100 text-center" style={{fontFamily: 'Inter, Arial, sans-serif'}}>Have a question or want to learn more about AI-powered compliance? Fill out the form below — our team will get back to you shortly.</p>
         <p className="text-base text-cyan-300 mb-4 text-center">Or email us directly at <a href="mailto:hello@insprit.us" className="underline hover:text-blue-400">hello@insprit.us</a></p>
-        <form className="flex flex-col gap-6 bg-white/10 backdrop-blur-lg rounded-xl p-8 shadow-2xl border-2 border-cyan-400">
-          <div className="flex flex-col gap-2">
-            <label htmlFor="name" className="text-cyan-200 font-semibold">Name <span className="text-red-400">(Required)</span></label>
-            <input type="text" id="name" name="name" required className="px-4 py-3 rounded-lg bg-white/80 text-gray-900 font-medium focus:outline-none focus:ring-2 focus:ring-cyan-400" />
-          </div>
-          <div className="flex flex-col gap-2">
-            <label htmlFor="email" className="text-cyan-200 font-semibold">Email <span className="text-red-400">(Required — use for reply & updates)</span></label>
-            <input type="email" id="email" name="email" required className="px-4 py-3 rounded-lg bg-white/80 text-gray-900 font-medium focus:outline-none focus:ring-2 focus:ring-cyan-400" />
-          </div>
-          <div className="flex flex-col gap-2">
-            <label htmlFor="message" className="text-cyan-200 font-semibold">Message <span className="text-gray-400">(What would you like to know?)</span></label>
-            <textarea id="message" name="message" rows={5} required className="px-4 py-3 rounded-lg bg-white/80 text-gray-900 font-medium focus:outline-none focus:ring-2 focus:ring-cyan-400"></textarea>
-          </div>
-          <button type="submit" className="mt-4 px-8 py-4 bg-gradient-to-r from-cyan-400 to-blue-400 text-white font-extrabold rounded-xl shadow-2xl border-2 border-cyan-400 hover:scale-105 hover:drop-shadow-xl transition-transform duration-200 animate-bounce glow-effect" style={{fontFamily: 'Montserrat, Inter, Arial, sans-serif'}}>Send Message</button>
-        </form>
+        <ContactForm />
       </section>
     </main>
   );
