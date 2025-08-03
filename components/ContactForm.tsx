@@ -3,7 +3,6 @@
 import { useState, FormEvent, useEffect } from 'react';
 import emailjs from '@emailjs/browser';
 import { validateEmailJSConfig, getEmailJSConfig } from '../utils/emailjs-config';
-import EmailJSStatus from './EmailJSStatus';
 
 interface ContactFormProps {
   readonly className?: string;
@@ -227,7 +226,6 @@ ${formData.message}`,
 
   return (
     <div>
-      <EmailJSStatus />
       <form 
         onSubmit={handleSubmit} 
         className={`flex flex-col gap-2 bg-white/10 backdrop-blur-lg rounded-md p-4 shadow-lg border border-cyan-400 ${className}`}
