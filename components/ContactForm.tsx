@@ -389,24 +389,10 @@ ${formData.message}`,
         </div>
       </div>
 
-      {/* CAPTCHA */}
-      <div className="mt-3">
-        <ReCAPTCHA
-          ref={recaptchaRef}
-          sitekey="6Ldb5pgrAAAAAEew5aLy9ZztGptg_XbeWRoSKf-s"
-          onChange={handleCaptchaChange}
-          theme="dark"
-          size="compact"
-        />
-        {!captchaToken && errorMessage.includes('CAPTCHA') && (
-          <span className="text-red-400 text-xs block mt-0.5">Please complete the CAPTCHA verification.</span>
-        )}
-      </div>
-
       <button
         type="submit"
         disabled={isSubmitting}
-        className={`mt-1 px-4 py-2 bg-gradient-to-r from-cyan-400 to-blue-400 text-black font-bold rounded shadow border border-cyan-400 transition-all text-xs relative overflow-hidden ${
+        className={`mt-3 px-4 py-2 bg-gradient-to-r from-cyan-400 to-blue-400 text-black font-bold rounded shadow border border-cyan-400 transition-all text-xs relative overflow-hidden ${
           isSubmitting 
             ? 'opacity-50 cursor-not-allowed' 
             : 'hover:scale-105 animate-neon-pulse'
@@ -441,6 +427,22 @@ ${formData.message}`,
           )}
         </span>
       </button>
+
+      {/* CAPTCHA */}
+      <div className="mt-4 flex justify-center">
+        <div className="scale-75 origin-center">
+          <ReCAPTCHA
+            ref={recaptchaRef}
+            sitekey="6Ldb5pgrAAAAAEew5aLy9ZztGptg_XbeWRoSKf-s"
+            onChange={handleCaptchaChange}
+            theme="dark"
+            size="compact"
+          />
+        </div>
+        {!captchaToken && errorMessage.includes('CAPTCHA') && (
+          <span className="text-red-400 text-xs block mt-1 text-center w-full">Please complete the CAPTCHA verification.</span>
+        )}
+      </div>
       
       <style>{`
         @keyframes neonPulse {
