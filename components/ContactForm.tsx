@@ -1,8 +1,9 @@
 'use client';
 
-import { useState, FormEvent, useEffect } from 'react';
+import { useState, FormEvent, useEffect, useRef } from 'react';
 import emailjs from '@emailjs/browser';
 import { validateEmailJSConfig, getEmailJSConfig } from '../utils/emailjs-config';
+import ReCAPTCHA from 'react-google-recaptcha';
 
 interface ContactFormProps {
   readonly className?: string;
@@ -26,6 +27,8 @@ export default function ContactForm({ className = "" }: ContactFormProps) {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitStatus, setSubmitStatus] = useState<'idle' | 'success' | 'error'>('idle');
   const [errorMessage, setErrorMessage] = useState('');
+  const [captchaToken, setCaptchaToken] = useState<string | null>(null);
+  const recaptchaRef = useRef<ReCAPTCHA>(null);
 
   // Initialize EmailJS
   useEffect(() => {
@@ -98,6 +101,13 @@ export default function ContactForm({ className = "" }: ContactFormProps) {
     };
 
     setValidationErrors(errors);
+    
+    // Check CAPTCHA
+    if (!captchaToken) {
+      setErrorMessage('Please complete the CAPTCHA verification.');
+      return false;
+    }
+    
     return !Object.values(errors).some(error => error !== '');
   };
 
@@ -115,6 +125,20 @@ export default function ContactForm({ className = "" }: ContactFormProps) {
         [name]: ''
       }));
     }
+  };
+
+  const handleCaptchaChange = (token: string | null) => {
+    setCaptchaToken(token);
+    if (token) {
+      setErrorMessage(''); // Clear error when CAPTCHA is completed
+    }
+  };
+
+  const resetCaptcha = () => {
+    if (recaptchaRef.current) {
+      recaptchaRef.current.reset();
+    }
+    setCaptchaToken(null);
   };
 
   const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
@@ -187,6 +211,9 @@ ${formData.message}`,
         email: '',
         message: ''
       });
+      
+      // Reset CAPTCHA
+      resetCaptcha();
       
     } catch (error) {
       console.error('EmailJS Error Details:', error);
@@ -360,6 +387,20 @@ ${formData.message}`,
             {formData.message.length}/1000
           </span>
         </div>
+      </div>
+
+      {/* CAPTCHA */}
+      <div className="mt-3">
+        <ReCAPTCHA
+          ref={recaptchaRef}
+          sitekey={process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY || "6LcV5ZgrAAAAAN2nC6YOqDAPCRPuAs5_gsqRlt4K"}
+          onChange={handleCaptchaChange}
+          theme="dark"
+          size="compact"
+        />
+        {!captchaToken && errorMessage.includes('CAPTCHA') && (
+          <span className="text-red-400 text-xs block mt-0.5">Please complete the CAPTCHA verification.</span>
+        )}
       </div>
 
       <button
