@@ -393,7 +393,7 @@ ${formData.message}`,
       <div className="mt-3">
         <ReCAPTCHA
           ref={recaptchaRef}
-          sitekey={process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY || "6LcV5ZgrAAAAAN2nC6YOqDAPCRPuAs5_gsqRlt4K"}
+          sitekey="6Ldb5pgrAAAAAEew5aLy9ZztGptg_XbeWRoSKf-s"
           onChange={handleCaptchaChange}
           theme="dark"
           size="compact"
