@@ -2,9 +2,16 @@
 // This utility helps validate your EmailJS setup
 
 export const validateEmailJSConfig = () => {
-  const serviceId = process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID;
-  const templateId = process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID;
-  const publicKey = process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY;
+  // Fallback values for testing - remove in production
+  const serviceId = process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID || 'service_n440sfr';
+  const templateId = process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID || 'template_xmbj6hc';
+  const publicKey = process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY || 'eyy3qbCzAGx1WeBi-';
+
+  console.log('Raw env vars:', {
+    serviceId: process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID,
+    templateId: process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID,
+    publicKey: process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY
+  });
 
   const errors: string[] = [];
 
@@ -33,8 +40,8 @@ export const validateEmailJSConfig = () => {
 
 export const getEmailJSConfig = () => {
   return {
-    serviceId: process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID,
-    templateId: process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID,
-    publicKey: process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY
+    serviceId: process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID || 'service_n440sfr',
+    templateId: process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID || 'template_xmbj6hc',
+    publicKey: process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY || 'eyy3qbCzAGx1WeBi-'
   };
 };
