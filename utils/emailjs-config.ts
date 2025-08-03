@@ -4,7 +4,7 @@
 export const validateEmailJSConfig = () => {
   // Fallback values for testing - remove in production
   const serviceId = process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID || 'service_n440sfr';
-  const templateId = process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID || 'KafBEl5cQkMtuRy_xcKwU';
+  const templateId = process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID || 'template_xmbj6hc';
   const publicKey = process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY || 'eyy3qbCzAGx1WeBi-';
 
   console.log('Raw env vars:', {
@@ -41,7 +41,7 @@ export const validateEmailJSConfig = () => {
 export const getEmailJSConfig = () => {
   return {
     serviceId: process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID || 'service_n440sfr',
-    templateId: process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID || 'KafBEl5cQkMtuRy_xcKwU',
+    templateId: process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID || 'template_xmbj6hc',
     publicKey: process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY || 'eyy3qbCzAGx1WeBi-'
   };
 };
