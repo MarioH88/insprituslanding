@@ -5,13 +5,6 @@ import { validateEmailJSConfig } from '../utils/emailjs-config';
 export default function EmailJSStatus() {
   const validation = validateEmailJSConfig();
 
-  // Debug logging
-  console.log('EmailJS Environment Variables Check:');
-  console.log('SERVICE_ID:', process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID);
-  console.log('TEMPLATE_ID:', process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID);
-  console.log('PUBLIC_KEY:', process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY);
-  console.log('Validation result:', validation);
-
   if (validation.isValid) {
     return (
       <div className="mb-4 p-3 bg-green-500/20 border border-green-400 text-green-100 rounded-lg">
