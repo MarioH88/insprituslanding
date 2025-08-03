@@ -9,9 +9,9 @@ export default function EmailJSStatus() {
     return (
       <div className="mb-4 p-3 bg-green-500/20 border border-green-400 text-green-100 rounded-lg">
         <p className="font-semibold">✅ EmailJS is configured correctly!</p>
-        <p className="text-sm">Service: {validation.config.serviceId}</p>
+        {/* <p className="text-sm">Service: {validation.config.serviceId}</p>
         <p className="text-sm">Template: {validation.config.templateId}</p>
-        <p className="text-sm">Public Key: {validation.config.publicKey}</p>
+        <p className="text-sm">Public Key: {validation.config.publicKey}</p> */}
       </div>
     );
   }
