@@ -76,7 +76,7 @@ export default function Page() {
           </div>
           <h1 className="text-5xl md:text-7xl font-extrabold text-white mb-6 drop-shadow-lg tracking-tight animate-slide-up">Inspritus</h1>
           <p className="text-2xl md:text-3xl text-white mb-10 font-medium animate-fade-in drop-shadow">AI-powered compliance innovation for Governance, Risk, and Compliance (GRC)</p>
-          <a href="#cta" className="inline-block px-10 py-5 bg-gradient-to-r from-cyan-400 to-blue-400 text-white font-bold rounded-xl shadow-2xl border-2 border-cyan-400 hover:scale-105 transition-transform duration-200 animate-bounce glow-effect drop-shadow-lg">Join Early Access</a>
+          <a href="#contact" className="inline-block px-10 py-5 bg-gradient-to-r from-cyan-400 to-blue-400 text-white font-bold rounded-xl shadow-2xl border-2 border-cyan-400 hover:scale-105 transition-transform duration-200 animate-bounce glow-effect drop-shadow-lg">Join Early Access</a>
         </div>
         <div className="absolute bottom-0 left-0 w-full h-32 bg-gradient-to-t from-cyan-400 to-transparent"></div>
         {/* Dark overlay for readability */}
@@ -101,7 +101,7 @@ export default function Page() {
           </div>
           <div className="group mx-auto grid max-w-sm items-start gap-6 lg:max-w-none lg:grid-cols-3">
             {/* Card 1 */}
-            <a className="group/card relative h-full overflow-hidden rounded-2xl bg-gray-800 p-px before:pointer-events-none before:absolute before:-left-40 before:-top-40 before:z-10 before:h-80 before:w-80 before:translate-x-[var(--mouse-x,0px)] before:translate-y-[var(--mouse-y,0px)] before:rounded-full before:bg-indigo-500/80 before:opacity-0 before:blur-3xl before:transition-opacity before:duration-500 after:pointer-events-none after:absolute after:-left-48 after:-top-48 after:z-30 after:h-64 after:w-64 after:translate-x-[var(--mouse-x,0px)] after:translate-y-[var(--mouse-y,0px)] after:rounded-full after:bg-indigo-500 after:opacity-0 after:blur-3xl after:transition-opacity after:duration-500 hover:after:opacity-20 group-hover:before:opacity-100" href="#0" data-aos="zoom-in" data-aos-delay="0">
+            <div className="group/card relative h-full overflow-hidden rounded-2xl bg-gray-800 p-px before:pointer-events-none before:absolute before:-left-40 before:-top-40 before:z-10 before:h-80 before:w-80 before:translate-x-[var(--mouse-x,0px)] before:translate-y-[var(--mouse-y,0px)] before:rounded-full before:bg-indigo-500/80 before:opacity-0 before:blur-3xl before:transition-opacity before:duration-500 after:pointer-events-none after:absolute after:-left-48 after:-top-48 after:z-30 after:h-64 after:w-64 after:translate-x-[var(--mouse-x,0px)] after:translate-y-[var(--mouse-y,0px)] after:rounded-full after:bg-indigo-500 after:opacity-0 after:blur-3xl after:transition-opacity after:duration-500 hover:after:opacity-20 group-hover:before:opacity-100" data-aos="zoom-in" data-aos-delay="0">
               <div className="relative z-20 h-full overflow-hidden rounded-[inherit] bg-gray-950 after:absolute after:inset-0 after:bg-gradient-to-br after:from-gray-900/50 after:via-gray-800/25 after:to-gray-900/50 transition-all duration-300 group-hover/card:scale-105 group-hover/card:shadow-indigo-500/40">
                 <img src="/images/workflow-01.png" alt="Smart Compliance Toolkit" className="inline-flex transition-all duration-300 group-hover/card:scale-110 group-hover/card:shadow-[0_0_32px_#6366f1,0_0_64px_#6366f1]" width={350} height={288} />
                 <div className="p-6">
@@ -111,9 +111,9 @@ export default function Page() {
                   <p className="text-indigo-200/65 transition-all duration-300 group-hover/card:text-indigo-100">Automate the entire GRC process with AI-powered tools built to streamline risk registers, policy generation, and audit documentation — all in one place.</p>
                 </div>
               </div>
-            </a>
+            </div>
             {/* Card 2 */}
-            <a className="group/card relative h-full overflow-hidden rounded-2xl bg-gray-800 p-px before:pointer-events-none before:absolute before:-left-40 before:-top-40 before:z-10 before:h-80 before:w-80 before:translate-x-[var(--mouse-x,0px)] before:translate-y-[var(--mouse-y,0px)] before:rounded-full before:bg-indigo-500/80 before:opacity-0 before:blur-3xl before:transition-opacity before:duration-500 after:pointer-events-none after:absolute after:-left-48 after:-top-48 after:z-30 after:h-64 after:w-64 after:translate-x-[var(--mouse-x,0px)] after:translate-y-[var(--mouse-y,0px)] after:rounded-full after:bg-indigo-500 after:opacity-0 after:blur-3xl after:transition-opacity after:duration-500 hover:after:opacity-20 group-hover:before:opacity-100" href="#0" data-aos="zoom-in" data-aos-delay="100">
+            <div className="group/card relative h-full overflow-hidden rounded-2xl bg-gray-800 p-px before:pointer-events-none before:absolute before:-left-40 before:-top-40 before:z-10 before:h-80 before:w-80 before:translate-x-[var(--mouse-x,0px)] before:translate-y-[var(--mouse-y,0px)] before:rounded-full before:bg-indigo-500/80 before:opacity-0 before:blur-3xl before:transition-opacity before:duration-500 after:pointer-events-none after:absolute after:-left-48 after:-top-48 after:z-30 after:h-64 after:w-64 after:translate-x-[var(--mouse-x,0px)] after:translate-y-[var(--mouse-y,0px)] after:rounded-full after:bg-indigo-500 after:opacity-0 after:blur-3xl after:transition-opacity after:duration-500 hover:after:opacity-20 group-hover:before:opacity-100" data-aos="zoom-in" data-aos-delay="100">
               <div className="relative z-20 h-full overflow-hidden rounded-[inherit] bg-gray-950 after:absolute after:inset-0 after:bg-gradient-to-br after:from-gray-900/50 after:via-gray-800/25 after:to-gray-900/50 transition-all duration-300 group-hover/card:scale-105 group-hover/card:shadow-indigo-500/40">
                 <img src="/images/workflow-02.png" alt="Scalable Integrations" className="inline-flex transition-all duration-300 group-hover/card:scale-110 group-hover/card:shadow-[0_0_32px_#6366f1,0_0_64px_#6366f1]" width={350} height={288} />
                 <div className="p-6">
@@ -123,9 +123,9 @@ export default function Page() {
                   <p className="text-indigo-200/65 transition-all duration-300 group-hover/card:text-indigo-100">Seamlessly integrate with your existing stack — from cloud infrastructure to documentation platforms — to support scalable, real-time compliance operations.</p>
                 </div>
               </div>
-            </a>
+            </div>
             {/* Card 3 */}
-            <a className="group/card relative h-full overflow-hidden rounded-2xl bg-gray-800 p-px before:pointer-events-none before:absolute before:-left-40 before:-top-40 before:z-10 before:h-80 before:w-80 before:translate-x-[var(--mouse-x,0px)] before:translate-y-[var(--mouse-y,0px)] before:rounded-full before:bg-indigo-500/80 before:opacity-0 before:blur-3xl before:transition-opacity before:duration-500 after:pointer-events-none after:absolute after:-left-48 after:-top-48 after:z-30 after:h-64 after:w-64 after:translate-x-[var(--mouse-x,0px)] after:translate-y-[var(--mouse-y,0px)] after:rounded-full after:bg-indigo-500 after:opacity-0 after:blur-3xl after:transition-opacity after:duration-500 hover:after:opacity-20 group-hover:before:opacity-100" href="#0" data-aos="zoom-in" data-aos-delay="200">
+            <div className="group/card relative h-full overflow-hidden rounded-2xl bg-gray-800 p-px before:pointer-events-none before:absolute before:-left-40 before:-top-40 before:z-10 before:h-80 before:w-80 before:translate-x-[var(--mouse-x,0px)] before:translate-y-[var(--mouse-y,0px)] before:rounded-full before:bg-indigo-500/80 before:opacity-0 before:blur-3xl before:transition-opacity before:duration-500 after:pointer-events-none after:absolute after:-left-48 after:-top-48 after:z-30 after:h-64 after:w-64 after:translate-x-[var(--mouse-x,0px)] after:translate-y-[var(--mouse-y,0px)] after:rounded-full after:bg-indigo-500 after:opacity-0 after:blur-3xl after:transition-opacity after:duration-500 hover:after:opacity-20 group-hover:before:opacity-100" data-aos="zoom-in" data-aos-delay="200">
               <div className="relative z-20 h-full overflow-hidden rounded-[inherit] bg-gray-950 after:absolute after:inset-0 after:bg-gradient-to-br after:from-gray-900/50 after:via-gray-800/25 after:to-gray-900/50 transition-all duration-300 group-hover/card:scale-105 group-hover/card:shadow-indigo-500/40">
                 <img src="/images/workflow-03.png" alt="Customizable Workflow Engines" className="inline-flex transition-all duration-300 group-hover/card:scale-110 group-hover/card:shadow-[0_0_32px_#6366f1,0_0_64px_#6366f1]" width={350} height={288} />
                 <div className="p-6">
@@ -135,16 +135,15 @@ export default function Page() {
                   <p className="text-indigo-200/65 transition-all duration-300 group-hover/card:text-indigo-100">Adapt workflows to your team’s unique compliance needs. Whether you're preparing for a federal grant audit or aligning with ISO standards, Inspritus molds to your framework.</p>
                 </div>
               </div>
-            </a>
+            </div>
           </div>
         </div>
       </section>
-      {/* Trusted by Section */}
+      {/* Supported Frameworks Section */}
       <section className="max-w-4xl mx-auto px-4 py-16 flex flex-col items-center" data-aos="fade-up">
-        <span className="uppercase text-xs text-cyan-300 mb-4 tracking-widest">Trusted by</span>
+        <span className="uppercase text-xs text-cyan-300 mb-4 tracking-widest">Supported Frameworks</span>
         <div className="relative w-full flex justify-center items-center">
-          {/* Modern SVG illustration for trusted brands */}
-          <img src="/images/features.png" alt="Trusted Brands Network" className="w-full max-w-2xl rounded-2xl shadow-2xl border-2 border-cyan-400" />
+          <img src="/images/features.png" alt="SOC 2, ISO 27001, and NIST compliance frameworks" className="w-full max-w-2xl rounded-2xl shadow-2xl border-2 border-cyan-400" />
         </div>
       </section>
       {/* How It Works Section - Black & Centered */}
@@ -157,8 +156,7 @@ export default function Page() {
             </div>
             <span className="font-bold text-cyan-300 mb-3 text-2xl text-center" style={{fontFamily: 'Montserrat, Inter, Arial, sans-serif'}}>Connect</span>
             <span className="text-gray-200 text-lg text-center font-medium leading-relaxed font-nacelle">
-              Securely integrate Inspritus with your existing cloud infrastructure, documentation tools, and project management systems. Instantly sync data sources for real-time compliance visibility.<br />
-              <span className="text-xs text-cyan-400 mt-2 block">SEO: compliance integration, GRC system integration, secure data sync</span>
+              Securely integrate Inspritus with your existing cloud infrastructure, documentation tools, and project management systems. Instantly sync data sources for real-time compliance visibility.
             </span>
           </div>
           <div className="flex flex-col items-center bg-black rounded-xl shadow-lg p-8 border border-cyan-700 animate-float-box transition-transform duration-300 hover:scale-105 hover:shadow-cyan-400/40" data-aos="zoom-in" data-aos-delay="100">
@@ -167,8 +165,7 @@ export default function Page() {
             </div>
             <span className="font-bold text-cyan-300 mb-3 text-2xl text-center" style={{fontFamily: 'Montserrat, Inter, Arial, sans-serif'}}>Automate</span>
             <span className="text-gray-200 text-lg text-center font-medium leading-relaxed font-nacelle">
-              Let our AI engine manage repetitive GRC tasks — from risk register updates to control evidence mapping — so your team can focus on what matters most.<br />
-              <span className="text-xs text-cyan-400 mt-2 block">SEO: AI compliance automation, automated risk register, evidence collection tool</span>
+              Let our AI engine manage repetitive GRC tasks — from risk register updates to control evidence mapping — so your team can focus on what matters most.
             </span>
           </div>
           <div className="flex flex-col items-center bg-black rounded-xl shadow-lg p-8 border border-cyan-700 animate-float-box transition-transform duration-300 hover:scale-105 hover:shadow-cyan-400/40" data-aos="zoom-in" data-aos-delay="200">
@@ -177,8 +174,7 @@ export default function Page() {
             </div>
             <span className="font-bold text-cyan-300 mb-3 text-2xl text-center" style={{fontFamily: 'Montserrat, Inter, Arial, sans-serif'}}>Report</span>
             <span className="text-gray-200 text-lg text-center font-medium leading-relaxed font-nacelle">
-              Generate audit-ready reports, dashboards, and compliance insights in just a few clicks. Stay aligned with SOC 2, ISO 27001, NIST, and grant audit requirements.<br />
-              <span className="text-xs text-cyan-400 mt-2 block">SEO: audit-ready reports, GRC reporting, SOC 2 dashboard, compliance analytics</span>
+              Generate audit-ready reports, dashboards, and compliance insights in just a few clicks. Stay aligned with SOC 2, ISO 27001, NIST, and grant audit requirements.
             </span>
           </div>
         </div>
@@ -262,9 +258,10 @@ export default function Page() {
         </div>
       </section>
 
-      {/* What Our Users Say - Carousel Section */}
+      {/* Early Feedback Section */}
       <section className="max-w-4xl mx-auto px-4 py-16 rounded-2xl shadow-2xl bg-black border border-cyan-700 flex flex-col items-center" data-aos="fade-up">
-        <h2 className="text-4xl md:text-5xl font-extrabold mb-8 text-cyan-300 drop-shadow-2xl text-center">What Our Users Say</h2>
+        <h2 className="text-4xl md:text-5xl font-extrabold mb-2 text-cyan-300 drop-shadow-2xl text-center">Early Feedback</h2>
+        <p className="text-gray-400 text-sm mb-8 text-center">From teams evaluating Inspritus during early access</p>
         <div className="flex flex-col items-center bg-black rounded-xl shadow-lg p-8 border border-cyan-700 animate-float-box w-full max-w-xl transition-transform duration-300 hover:scale-105 hover:shadow-cyan-400/40">
           <p className="text-xl md:text-2xl text-gray-100 text-center mb-6 font-medium leading-relaxed">{testimonials[testimonialIdx].text}</p>
           <div className="flex items-center justify-center gap-2 mb-4">

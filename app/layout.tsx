@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import "aos/dist/aos.css";
 import "./css/style.css";
 
@@ -5,6 +6,7 @@ import { Inter } from "next/font/google";
 import localFont from "next/font/local";
 
 import Header from "@/components/ui/header";
+import SiteFooter from "@/components/ui/site-footer";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -39,9 +41,42 @@ const nacelle = localFont({
   display: "swap"
 });
 
-export const metadata = {
-  title: "Inspritus LLC | AI-Powered Compliance for Risk and Governance",
-  description: "Inspritus is an AI-driven compliance platform for automating SOC 2, ISO 27001, and NIST frameworks. Built for startups, grant recipients, and public sector teams.",
+export const metadata: Metadata = {
+  metadataBase: new URL("https://insprit.us"),
+  title: {
+    default: "Inspritus LLC | AI-Powered Compliance for Risk and Governance",
+    template: "%s | Inspritus",
+  },
+  description:
+    "Inspritus is an AI-driven compliance platform for automating SOC 2, ISO 27001, and NIST frameworks. Built for startups, grant recipients, and public sector teams.",
+  keywords: [
+    "compliance automation",
+    "GRC platform",
+    "SOC 2",
+    "ISO 27001",
+    "NIST 800-53",
+    "AI compliance",
+    "risk register",
+    "audit readiness",
+  ],
+  alternates: {
+    canonical: "/",
+  },
+  openGraph: {
+    type: "website",
+    locale: "en_US",
+    url: "https://insprit.us",
+    siteName: "Inspritus",
+    title: "Inspritus LLC | AI-Powered Compliance for Risk and Governance",
+    description:
+      "Automate SOC 2, ISO 27001, and NIST compliance with AI-powered GRC workflows.",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Inspritus LLC | AI-Powered Compliance",
+    description:
+      "Automate SOC 2, ISO 27001, and NIST compliance with AI-powered GRC workflows.",
+  },
 };
 
 export default function RootLayout({
@@ -55,11 +90,7 @@ export default function RootLayout({
         <div className="flex min-h-screen flex-col overflow-hidden supports-[overflow:clip]:overflow-clip">
           <Header />
           {children}
-          <footer className="mt-auto w-full py-8 text-center border-t border-white/10 bg-gray-950">
-            <p className="text-gray-400 text-sm tracking-wide">
-              © 2025 <span className="font-bold text-white">Inspritus LLC</span>. All rights reserved.
-            </p>
-          </footer>
+          <SiteFooter />
         </div>
       </body>
     </html>
